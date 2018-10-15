@@ -1,2 +1,2 @@
 # Sample
-Testing a script
+Web Server Setup for WordPress
