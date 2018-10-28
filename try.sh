@@ -45,13 +45,14 @@ sudo mysql_secure_installation
 #while proceeding with secure installation do yes to all settings. Enter the password for data base.
 
 # Mysql database creation:
+mysql -u root -p<<Query
 
 CREATE DATABASE wpdatabase;
 CREATE USER 'example.com_db'@'localhost' IDENTIFIED BY 'reset@123';
 GRANT ALL ON wpdatabase.* TO 'wpuser'@'localhost' IDENTIFIED BY 'reset@123' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
 EXIT;
-
+Query
 #installation of wordpress on user account:
 
 echo "Database Name: "
